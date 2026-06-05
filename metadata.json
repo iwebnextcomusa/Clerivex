@@ -1,0 +1,6 @@
+{
+  "name": "Clerivex",
+  "description": "Premium Office Supplies & Business Procurement Solutions",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
