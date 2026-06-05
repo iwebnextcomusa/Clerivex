@@ -19,7 +19,7 @@ export const PRODUCTS: Product[] = [
     price: 12.49,
     rating: 4.8,
     reviewCount: 236,
-    image: '🖊️',
+    image: '/src/assets/images/prod_p1_pens_1780694163784.png',
     sku: 'CVX-BP-BK-12',
     description: 'Clerivex retractable ballpoint pens deliver a smooth writing experience and professional look. Perfect for everyday use in the office, at home, or on the go.',
     highlights: [
@@ -48,7 +48,7 @@ export const PRODUCTS: Product[] = [
     price: 11.49,
     rating: 4.7,
     reviewCount: 142,
-    image: '📝',
+    image: '/src/assets/images/prod_p2_legal_pads_1780694181737.png',
     sku: 'CVX-LP-CY-6',
     description: 'High-quality canary yellow legal pads featuring ultra-smooth paper and extra rigid backs to make drafting, reporting, or sketching exceptionally comfortable.',
     highlights: [
@@ -77,7 +77,7 @@ export const PRODUCTS: Product[] = [
     price: 8.99,
     rating: 4.9,
     reviewCount: 98,
-    image: '🟨',
+    image: '/src/assets/images/prod_p3_sticky_notes_1780694194544.png',
     sku: 'CVX-SN-ASS-12',
     description: 'Vibrant self-stick notes with ultra-reliable adhesives. Perfect for quick annotations, bookmarks, brainstorming workshops, and color-coded kanban boards.',
     highlights: [
@@ -104,7 +104,7 @@ export const PRODUCTS: Product[] = [
     price: 39.99,
     rating: 4.6,
     reviewCount: 312,
-    image: '🖨️',
+    image: '/src/assets/images/prod_p4_ink_cartridge_1780694208456.png',
     sku: 'CVX-INK-HP952-SET',
     description: 'Premium re-engineered ink cartridge bundle designed to deliver laser-sharp print text rendering and incredible photographic accuracy on normal photo paper and envelope stocks.',
     highlights: [
@@ -129,7 +129,7 @@ export const PRODUCTS: Product[] = [
     price: 189.99,
     rating: 4.9,
     reviewCount: 174,
-    image: '🪑',
+    image: '/src/assets/images/prod_p5_leather_chair_1780694225073.png',
     sku: 'CVX-CH-EXE-01',
     description: 'Invest in lumbar health and deep executive focus. This masterwork of office seating features dual-density foam core cushioning and adaptable 3D dynamic mesh armrests.',
     highlights: [
@@ -155,7 +155,7 @@ export const PRODUCTS: Product[] = [
     price: 14.99,
     rating: 4.5,
     reviewCount: 88,
-    image: '🖱️',
+    image: '/src/assets/images/prod_p6_mouse_1780694242573.png',
     sku: 'CVX-MS-WRL-02',
     description: 'Quiet-click ergonomic office mouse with dual-band wireless 2.4Ghz & smart Bluetooth connectivity. Glide fluidly across desks without requiring an additional mousepad.',
     highlights: [
@@ -180,7 +180,7 @@ export const PRODUCTS: Product[] = [
     price: 9.49,
     rating: 4.7,
     reviewCount: 52,
-    image: '📎',
+    image: '/src/assets/images/prod_p7_stapler_1780694254644.png',
     sku: 'CVX-ST-FL-BK',
     description: 'Uncompromisingly robust all metal heavy duty stapler finished in a fingerprint-resistant matte black paint. Non-skid thermal rubber footprint keeps it completely stationary.',
     highlights: [
@@ -204,7 +204,7 @@ export const PRODUCTS: Product[] = [
     price: 7.49,
     rating: 4.8,
     reviewCount: 512,
-    image: '📃',
+    image: '/src/assets/images/prod_p8_copy_paper_1780694266914.png',
     sku: 'CVX-CP-LT-500',
     description: 'Brilliant white multi-purpose photocopy paper designed for dependable performance. Formulated to resist yellowing and printed ink bleed for standard high-speed photocopy runs.',
     highlights: [
@@ -230,7 +230,7 @@ export const PRODUCTS: Product[] = [
     price: 24.99,
     rating: 4.9,
     reviewCount: 167,
-    image: '☕',
+    image: '/src/assets/images/prod_p9_coffee_pods_1780694279494.png',
     sku: 'CVX-BR-CF-48',
     description: 'Revitalize team morale with Clerivex Custom Roast. Earthy, bold, and fully balanced arabica dark roast roasted in small batches specifically for workplace breakroom machines.',
     highlights: [
@@ -254,7 +254,7 @@ export const PRODUCTS: Product[] = [
     price: 18.99,
     rating: 4.8,
     reviewCount: 89,
-    image: '📁',
+    image: '/src/assets/images/prod_p10_accordion_folder_1780694293513.png',
     sku: 'CVX-FS-ACC-24',
     description: 'A dynamic expandable organizing solution. Built with tear-proof professional canvas margins, safe strap ties, and color-labeled tab dividers.',
     highlights: [

@@ -72,9 +72,20 @@ export default function ProductDetailModal({
                 )}
                 
                 {/* Visual Thumbnail */}
-                <span className="text-[120px] transition duration-300 hover:scale-110">
-                  {product.image}
-                </span>
+                <div className="w-full h-full flex items-center justify-center overflow-hidden rounded-xl">
+                  {product.image.startsWith('/') ? (
+                    <img 
+                      src={product.image} 
+                      alt={product.name} 
+                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" 
+                      referrerPolicy="no-referrer" 
+                    />
+                  ) : (
+                    <span className="text-[120px] transition duration-300 hover:scale-110">
+                      {product.image}
+                    </span>
+                  )}
+                </div>
 
                 {/* Wishlist triggers */}
                 <button
@@ -309,7 +320,13 @@ export default function ProductDetailModal({
                     onClick={() => onSelectProduct(p)}
                     className="bg-gray-50/50 hover:bg-gray-50 border border-gray-100 hover:border-clerivex-purple/30 rounded-xl p-3 flex items-center gap-3 cursor-pointer transition-all uppercase text-left"
                   >
-                    <span className="text-3xl p-1 bg-white rounded-lg border border-gray-100">{p.image}</span>
+                    <div className="w-10 h-10 rounded-lg overflow-hidden border border-gray-100 shrink-0 bg-white flex items-center justify-center">
+                      {p.image.startsWith('/') ? (
+                        <img src={p.image} alt={p.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                      ) : (
+                        <span className="text-xl">{p.image}</span>
+                      )}
+                    </div>
                     <div className="min-w-0">
                       <h4 className="text-xs font-semibold text-gray-800 truncate leading-tight">{p.name}</h4>
                       <span className="text-xs font-bold text-clerivex-purple font-mono block mt-0.5">${p.price.toFixed(2)}</span>

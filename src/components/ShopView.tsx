@@ -299,8 +299,19 @@ export default function ShopView({ onAddToCart, onAddToWishlist, onSelectProduct
                       </button>
 
                       {/* Giant Icon Thumbnail representation */}
-                      <div className="text-6xl group-hover:scale-110 transition duration-300 select-none">
-                        {product.image}
+                      <div className="w-full h-full flex items-center justify-center overflow-hidden select-none">
+                        {product.image.startsWith('/') ? (
+                          <img 
+                            src={product.image} 
+                            alt={product.name} 
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" 
+                            referrerPolicy="no-referrer" 
+                          />
+                        ) : (
+                          <div className="text-6xl group-hover:scale-110 transition duration-300">
+                            {product.image}
+                          </div>
+                        )}
                       </div>
 
                       <div className="absolute inset-0 bg-clerivex-dark/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">

@@ -344,8 +344,8 @@ export default function App() {
                 <div className="lg:col-span-5 h-[280px] sm:h-[360px] md:h-[400px] w-full relative">
                   <div className="absolute inset-x-0 -bottom-4 top-12 bg-blue-500/10 rounded-2xl filter blur-xl pointer-events-none"></div>
                   <img
-                    src="/src/assets/images/hero_workspace_1780692927145.png"
-                    alt="Premium Clerivex office supplies, fountain pen, and smart organizer workbook"
+                    src="/src/assets/images/premium_hero_stationery_1780693981374.png"
+                    alt="Premium Clerivex workspace with luxury stationery, gold and violet leather-bound organizer, and professional accessories"
                     className="w-full h-full object-cover rounded-2xl border border-slate-200 shadow-md relative z-10 hover:scale-[1.015] transition-transform duration-300"
                     referrerPolicy="no-referrer"
                   />

@@ -214,7 +214,13 @@ export default function CartCheckoutView({
                       
                       {/* Name & Thumbnail */}
                       <div className="flex items-center gap-4 min-w-0">
-                        <span className="text-4xl p-2 bg-gray-50 border border-gray-100 rounded-xl select-none shrink-0">{item.product.image}</span>
+                        <div className="w-16 h-16 rounded-xl overflow-hidden border border-gray-100 shrink-0 bg-gray-50 flex items-center justify-center">
+                          {item.product.image.startsWith('/') ? (
+                            <img src={item.product.image} alt={item.product.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                          ) : (
+                            <span className="text-4xl select-none">{item.product.image}</span>
+                          )}
+                        </div>
                         <div className="min-w-0 space-y-0.5">
                           <h4 className="text-sm font-semibold text-gray-900 truncate">{item.product.name}</h4>
                           <span className="text-[10px] text-gray-400 uppercase font-mono tracking-widest">{item.product.sku}</span>
@@ -559,7 +565,13 @@ export default function CartCheckoutView({
                 {cartItems.map((item) => (
                   <div key={item.product.id} className="flex justify-between items-center text-xs">
                     <div className="min-w-0 flex items-center gap-2">
-                      <span className="w-8 h-8 rounded bg-white flex items-center justify-center border text-lg shrink-0">{item.product.image}</span>
+                      <div className="w-8 h-8 rounded-lg overflow-hidden bg-white border shrink-0 flex items-center justify-center">
+                        {item.product.image.startsWith('/') ? (
+                          <img src={item.product.image} alt={item.product.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                        ) : (
+                          <span className="text-base select-none">{item.product.image}</span>
+                        )}
+                      </div>
                       <div className="min-w-0">
                         <h4 className="font-semibold text-gray-800 truncate">{item.product.name}</h4>
                         <span className="text-[10px] text-gray-400">{item.quantity} x ${item.product.price}</span>
